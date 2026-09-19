@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Backend Developer Student" />
+    <title>Vy Le</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="site-brand" aria-label="Vy Le, Home">
+          Vy Le
+          <span class="brand-mark" aria-hidden="true"></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          data-menu-toggle
+        >
+          <span
+            class="material-symbols-outlined"
+            aria-hidden="true"
+            data-menu-icon
+            >menu</span
+          >
+        </button>
+
+        <nav
+          class="site-navigation"
+          id="primary-navigation"
+          aria-label="Primary navigation"
+        >
+          <ul class="navigation-list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education & Experience</a></li>
+            <li><a href="skills.html">My Skills</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="goals.html">My Goals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="language-control">
+          <span class="language-active" lang="en">EN</span>
+          <span
+            class="language-disabled"
+            lang="vi"
+            aria-disabled="true"
+            title="Vietnamese version planned"
+            >VI</span
+          >
+        </div>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow hero-status">
+              <span class="status-dot" aria-hidden="true"></span>Software
+              Engineering Student
+            </p>
+
+            <h1 class="hero-title">
+              <span class="hero-name">Vy Le</span>
+              <span class="hero-role">Backend Developer Student</span>
+            </h1>
+
+            <p class="hero-introduction">
+              I am building strong foundations in backend development, API
+              design, relational databases, and readable code. My current focus
+              is understanding how dependable services work from request to
+              database.
+            </p>
+
+            <div class="hero-actions">
+              <a href="projects.html" class="button button-primary"
+                >View Projects
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >arrow_forward</span
+                >
+              </a>
+
+              <a href="contact.html" class="button button-secondary"
+                >Contact Me</a
+              >
+            </div>
+
+            <ul class="hero-topics" aria-label="Current technical interests">
+              <li class="badge">REST APIs</li>
+              <li class="badge">Relational Databases</li>
+              <li class="badge">Clean Code</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div
+              class="terminal-window"
+              aria-label="Local development terminal demonstration"
+              data-terminal
+            >
+              <div class="terminal-titlebar">
+                <div class="terminal-dots" aria-hidden="true">
+                  <span class="terminal-dot terminal-dot-red"></span>
+                  <span class="terminal-dot terminal-dot-yellow"></span>
+                  <span class="terminal-dot terminal-dot-green"></span>
+                </div>
+
+                <p class="terminal-title">
+                  <span aria-hidden="true">&gt;_</span>
+                  bash — development server
+                </p>
+              </div>
+
+              <div class="terminal-output">
+                <p class="terminal-line" data-terminal-line>
+                  <span class="terminal-prompt">$</span>
+                  <code>npm run dev</code>
+                </p>
+
+                <p class="terminal-line" data-terminal-line>
+                  <code>Starting development server...</code>
+                </p>
+
+                <p class="terminal-line" data-terminal-line>
+                  <code>Connecting to database...</code>
+                </p>
+
+                <p class="terminal-line terminal-success" data-terminal-line>
+                  <span aria-hidden="true">✓</span>
+                  <code>Database connected</code>
+                </p>
+
+                <p class="terminal-line" data-terminal-line>
+                  <code
+                    >API server running on
+                    <span class="terminal-highlight">port 3000</span>
+                  </code>
+                </p>
+                <p class="terminal-line terminal-success" data-terminal-line>
+                  <span aria-hidden="true">✓</span>
+                  <code>Server ready</code>
+                </p>
+
+                <p class="terminal-line" data-terminal-line>
+                  <span class="terminal-prompt">&gt;</span>
+                  <span class="terminal-cursor" aria-hidden="true"></span>
+                  <span class="visually-hidden"
+                    >Ready for the next command</span
+                  >
+                </p>
+              </div>
+
+              <div class="terminal-status">
+                <span>
+                  <span class="terminal-status-dot" aria-hidden="true"> </span>
+                  Node.js v20.x
+                </span>
+
+                <span>Express · MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section foundation-section"
+        aria-labelledby="foundation-title"
+      >
+        <div class="container">
+          <div class="foundation-heading">
+            <div>
+              <p class="eyebrow">Foundation & Mindset</p>
+
+              <h2 id="foundation-title">Engineer with Purpose</h2>
+            </div>
+
+            <p class="muted">
+              Moving from digital operations into software engineering through
+              focused study, practical projects, and dependable working habits.
+            </p>
+          </div>
+
+          <div class="foundation-grid">
+            <article class="card foundation-card">
+              <span class="card-index" aria-hidden="true">01</span>
+
+              <h3>Core Learning</h3>
+
+              <p class="muted">
+                Studying Node.js, Express, MySQL, API development, and
+                relational schema design.
+              </p>
+
+              <p class="card-label">Backend fundamentals</p>
+            </article>
+
+            <article class="card foundation-card">
+              <span class="card-index" aria-hidden="true">02</span>
+
+              <h3>Background</h3>
+
+              <p class="muted">
+                Hospitality, WordPress management, and technical SEO developed
+                practical problem solving and attention to user needs.
+              </p>
+
+              <p class="card-label">Domain adaptability</p>
+            </article>
+
+            <article class="card foundation-card">
+              <span class="card-index" aria-hidden="true">03</span>
+
+              <h3>Working Philosophy</h3>
+
+              <p class="muted">
+                Finish what I start, understand the fundamentals, and prefer
+                readable solutions over shortcuts.
+              </p>
+
+              <p class="card-label">Execution standards</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section study-section"
+        aria-labelledby="study-focus-title"
+      >
+        <div class="container">
+          <div class="study-callout">
+            <div>
+              <p class="eyebrow">Academic & Project Status</p>
+
+              <h2 id="study-focus-title">Current Study Focus</h2>
+
+              <p class="muted">
+                Building foundations in REST APIs, relational databases,
+                authentication, validation, and structured backend code.
+              </p>
+            </div>
+
+            <a href="goals.html" class="button button-secondary"
+              >View Learning Roadmap</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-identity">
+          <a href="index.html" class="footer-brand">Vy Le</a>
+          <p>Backend Developer Student</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Contact links">
+          <a href="mailto:lelongvy13@gmail.com">Email</a>
+          <a
+            href="https://github.com/vy-long-le"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/vy-le-long-b9a3243a7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </nav>
+        <p class="footer-note">
+          Built while learning HTML, CSS, and Javascript
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

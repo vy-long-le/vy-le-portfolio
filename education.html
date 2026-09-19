@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vy Le" />
+    <title>My Education</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="site-brand" aria-label="Vy Le, Home">
+          Vy Le
+          <span class="brand-mark" aria-hidden="true"></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          data-menu-toggle
+        >
+          <span
+            class="material-symbols-outlined"
+            aria-hidden="true"
+            data-menu-icon
+            >Menu</span
+          >
+        </button>
+
+        <nav
+          class="site-navigation"
+          id="primary-navigation"
+          aria-label="Primary navigation"
+        >
+          <ul class="navigation-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li>
+              <a href="education.html" aria-current="page"
+                >Education & Experience</a
+              >
+            </li>
+            <li><a href="skills.html">My Skills</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="goals.html">My Goals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="language-control">
+          <span class="language-active" lang="en">EN</span>
+          <span
+            class="language-disabled"
+            lang="vi"
+            aria-disabled="true"
+            title="Vietnamese version planned"
+            >VI</span
+          >
+        </div>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <h1>Education & Experience</h1>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-identity">
+          <a href="index.html" class="footer-brand">Vy Le</a>
+          <p>Backend Developer Student</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Contact links">
+          <a href="mailto:lelongvy13@gmail.com">Email</a>
+          <a
+            href="https://github.com/vy-long-le"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/vy-le-long-b9a3243a7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </nav>
+        <p class="footer-note">
+          Built while learning HTML, CSS, and Javascript
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
