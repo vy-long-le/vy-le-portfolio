@@ -12,6 +12,10 @@ const prefersReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)",
 );
 
+const contactForm = document.querySelector("#contact-form");
+const contactCheckButton = document.querySelector("[data-contact-check]");
+const contactFeedback = document.querySelector("[data-contact-feedback]");
+
 function openMenu() {
   navigation.hidden = false;
 
@@ -82,6 +86,23 @@ if (terminal && !prefersReducedMotion.matches) {
         }, 200);
       }
     }, delay);
+  });
+}
+
+if (contactForm && contactCheckButton && contactFeedback) {
+  contactCheckButton.addEventListener("click", () => {
+    const isValid = contactForm.reportValidity();
+
+    if (!isValid) {
+      contactFeedback.hidden = true;
+      return;
+    }
+
+    contactFeedback.textContent =
+      "This prototype does not send messages. " +
+      "Please contact Vy by email or LinkedIn.";
+
+    contactFeedback.hidden = false;
   });
 }
 

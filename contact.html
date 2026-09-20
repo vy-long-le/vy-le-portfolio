@@ -76,7 +76,200 @@
       </div>
     </header>
     <main id="main-content" tabindex="-1">
-      <h1>Contact</h1>
+      <section class="page-hero" aria-labelledby="contact-title">
+        <div class="container">
+          <p class="eyebrow status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            Open to Learning Opportunities
+          </p>
+
+          <h1 id="contact-title">Contact</h1>
+
+          <p class="page-introduction">
+            I am interested in connecting with developers, mentors, and teams
+            offering opportunities to learn through practical backend work.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="section"
+        aria-label="Contact information and message form"
+      >
+        <div class="container contact-layout">
+          <div class="contact-information">
+            <!-- Contact channels and current status -->
+            <div>
+              <p class="eyebrow">Contact Channels</p>
+              <h2>Start a Conversation</h2>
+
+              <p class="muted">
+                Email and LinkedIn are the preferred channels for professional
+                conversations.
+              </p>
+            </div>
+
+            <address class="contact-channel-list">
+              <a href="mailto:lelongvy13@gmail.com" class="contact-link">
+                <span class="contact-marker" aria-hidden="true">@</span>
+                <span>
+                  <small>Email</small>
+                  <strong>lelongvy13@gmail.com</strong>
+                </span>
+              </a>
+
+              <a
+                href="https://github.com/vy-long-le"
+                class="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-marker" aria-hidden="true">GH</span>
+
+                <span>
+                  <small>GitHub</small>
+                  <strong>github.com/vy-long-le</strong>
+                </span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/vy-le-long-b9a3243a7/"
+                class="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="contact-marker" aria-hidden="true">IN</span>
+
+                <span>
+                  <small>LinkedIn</small>
+                  <strong>Vy Le Long</strong>
+                </span>
+              </a>
+
+              <a href="tel:+84935555542" class="contact-link">
+                <span class="contact-marker" aria-hidden="true">TEL</span>
+
+                <span>
+                  <small>Telephone</small>
+                  <strong>+84 935 555 542</strong>
+                </span>
+              </a>
+            </address>
+
+            <aside class="card contact-status">
+              <p class="eyebrow">Current Status</p>
+              <h3>Software Engineering Student</h3>
+
+              <p class="muted">
+                Currently studying at VTC Academy in Vietnam and building
+                foundations in backend development.
+              </p>
+
+              <p class="contact-timezone">
+                <span class="status-dot" aria-hidden="true"></span>
+                Timezone: GMT+7
+              </p>
+            </aside>
+          </div>
+
+          <div class="card contact-form-panel">
+            <!-- Prototype form -->
+            <div class="contact-form-heading">
+              <p class="eyebrow">Message Prototype</p>
+              <h2>Prepare a Message</h2>
+
+              <p class="muted">
+                Complete the fields below to check your message before
+                contacting me through email or LinkedIn.
+              </p>
+            </div>
+
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="contact-name">
+                    Name
+                    <span class="required-marker" aria-hidden="true">*</span>
+                  </label>
+
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-email">
+                    Email
+                    <span class="required-marker" aria-hidden="true">*</span>
+                  </label>
+
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-subject">
+                  Subject
+                  <span class="required-marker" aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  type="text"
+                  name="subject"
+                  id="contact-subject"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="contact-message">
+                  Message
+                  <span class="required-marker" aria-hidden="true">*</span>
+                </label>
+
+                <textarea
+                  name="message"
+                  id="contact-message"
+                  rows="7"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                class="button button-primary contact-form-button"
+                type="button"
+                data-contact-check
+              >
+                <span class="material-symbols-outlined" aria-hidden="true"
+                  >send</span
+                >
+                Check Message
+              </button>
+
+              <p class="form-disclaimer">
+                Prototype only. This form does not transmit or store data.
+              </p>
+
+              <p
+                class="form-feedback"
+                role="status"
+                data-contact-feedback
+                hidden
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="container footer-inner">
