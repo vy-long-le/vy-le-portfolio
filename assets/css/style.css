@@ -684,6 +684,26 @@ article {
   .education-sidebar {
     position: static;
   }
+
+  .roadmap-stage {
+    grid-template-columns: 42px 1fr;
+  }
+
+  .roadmap-status {
+    grid-column: 2;
+    width: fit-content;
+  }
+
+  .goals-support-grid,
+  .goal-principles {
+    grid-template-columns: 1fr;
+  }
+
+  .internship-callout {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-5);
+  }
 }
 
 @media (max-width: 480px) {
@@ -1840,4 +1860,142 @@ article {
 .technical-profile .button {
   width: 100%;
   margin-top: var(--space-5);
+}
+
+/* Style the roadmap */
+.roadmap-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  display: grid;
+  gap: var(--space-3);
+
+  list-style: none;
+}
+
+.roadmap-stage {
+  padding: var(--space-5);
+
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-5);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+
+  background-color: var(--color-surface);
+}
+
+.roadmap-stage-current {
+  border-color: var(--color-accent);
+  background-color: rgb(59 130 246 / 7%);
+}
+
+.roadmap-number {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.roadmap-stage h3 {
+  margin-bottom: var(--space-1);
+}
+
+.roadmap-stage p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.roadmap-status {
+  padding: 5px 9px;
+
+  border: 1px solid var(--color-accent);
+  border-radius: 999px;
+
+  color: var(--color-accent);
+
+  font-family: var(--font-mono);
+  font-size: 0, 7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.roadmap-status-future {
+  border-color: var(--color-border);
+  color: var(--color-text-muted);
+}
+
+/* Style the supporting content */
+.goals-support-section {
+  border-block: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.goals-support-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(320px, 0.8fr) minmax(0, 1.2fr);
+  gap: var(--space-5);
+}
+
+.roadmap-manifest pre {
+  margin: var(--space-5) 0 0;
+  padding: var(--space-5);
+
+  overflow-x: auto;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+
+  background-color: var(--color-canvas);
+  color: var(--color-success);
+}
+
+.roadmap-manifest code {
+  font-family: var(--font-mono);
+  line-height: 1.8;
+}
+
+.goal-principles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.goal-principles h2 {
+  font-size: 1.25rem;
+}
+
+/* Style the internship callout */
+.internship-callout {
+  padding: var(--space-7);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+
+  background-color: var(--color-surface);
+}
+
+.internship-callout > div:first-child {
+  max-width: 720px;
+}
+
+.internship-actions {
+  flex-shrink: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.roadmap-stage > div {
+  max-width: 760px;
 }
