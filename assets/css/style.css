@@ -676,6 +676,14 @@ article {
   .contact-form-panel {
     padding: var(--space-5);
   }
+
+  .education-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .education-sidebar {
+    position: static;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1711,4 +1719,125 @@ article {
 
 .contact-form-button .material-symbols-outlined {
   font-size: 20px;
+}
+
+/* Style the two-column layout */
+.education-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(320px, 0.7fr);
+  align-items: start;
+  gap: var(--space-8);
+}
+
+.education-sidebar {
+  display: grid;
+  gap: var(--space-5);
+}
+
+/* Style the timeline */
+.timeline-list {
+  position: relative;
+
+  margin: 0;
+  padding: 0 0 0 32px;
+
+  display: grid;
+  gap: var(--space-5);
+
+  list-style: none;
+}
+
+.timeline-list::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 7px;
+
+  width: 1px;
+
+  background-color: var(--color-border);
+}
+
+.timeline-list > li {
+  position: relative;
+}
+
+.timeline-list > li::before {
+  content: "";
+
+  position: absolute;
+  top: 28px;
+  left: -31px;
+
+  width: 14px;
+  height: 14px;
+
+  border: 3px solid var(--color-border);
+  border-radius: 50%;
+
+  background-color: var(--color-accent);
+}
+
+.timeline-entry {
+  box-shadow: none;
+}
+
+.timeline-date {
+  margin-bottom: var(--space-2);
+
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.timeline-entry h3 {
+  margin-bottom: var(--space-3);
+}
+
+.timeline-organization {
+  margin-bottom: var(--space-4);
+
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+/* Style the sidebar content */
+.takeaway-panel,
+.technology-profile {
+  box-shadow: none;
+}
+
+.takeaway-item {
+  padding-block: var(--space-4);
+
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: var(--space-3);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.takeaway-item > span {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.takeaway-item h3 {
+  margin-bottom: var(--sapce-1);
+  font-size: 1rem;
+}
+
+.takeaway-item p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.technical-profile .button {
+  width: 100%;
+  margin-top: var(--space-5);
 }
