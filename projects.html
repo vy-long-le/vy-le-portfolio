@@ -76,7 +76,215 @@
       </div>
     </header>
     <main id="main-content" tabindex="-1">
-      <h1>My Projects</h1>
+      <section class="page-hero" aria-labelledby="projects-title">
+        <div class="container">
+          <p class="eyebrow status-pill">
+            <span class="status-dot" aria-hidden="true"></span>Learning Through
+            Building
+          </p>
+
+          <h1 id="projects-title">Planned Projects</h1>
+
+          <p class="page-introduction">
+            These projects are planned exercises for applying backend
+            fundamentals. They describe intended learning outcomes, not
+            completed production systems.
+          </p>
+        </div>
+
+        <section class="section" aria-label="Planned backend projects">
+          <div class="container project-grid">
+            <!-- Four projects card -->
+            <article class="card project-card">
+              <div class="project-card-header">
+                <span class="badge">Backend API</span>
+
+                <p class="eyebrow status-pill">
+                  <span class="status-dot" aria-hidden="true"></span>Planned
+                  Project
+                </p>
+              </div>
+
+              <h2>REST API Task Manager</h2>
+
+              <p class="muted">
+                A planned CRUD API for practising route organization, input
+                validation, database queries, and consistent responses.
+              </p>
+
+              <div class="project-objectives">
+                <h3>Learning objectives</h3>
+
+                <ul>
+                  <li>Organize Express routes and controllers</li>
+                  <li>Validate incoming request data</li>
+                  <li>Use parameterized MySQL queries</li>
+                </ul>
+              </div>
+
+              <ul class="technology-list" aria-label="Planned technologies">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MySQL</li>
+              </ul>
+            </article>
+
+            <article class="card project-card">
+              <div class="project-card-header">
+                <span class="badge">Learning Tool</span>
+                <p class="eyebrow status-pill">
+                  <span class="status-dot" aria-hidden="true"></span>Planned
+                  Project
+                </p>
+              </div>
+
+              <h2>AI Study Assistant</h2>
+
+              <p class="muted">
+                A planned study-support application for exploring structured
+                prompts, API integration, and safe request handling.
+              </p>
+
+              <div class="project-objectives">
+                <h3>Learning objectives</h3>
+
+                <ul>
+                  <li>Structure requests to an external service</li>
+                  <li>Handle loading and failure states</li>
+                  <li>Store study topics consistently</li>
+                </ul>
+              </div>
+
+              <ul class="technology-list" aria-label="Planned technologies">
+                <li>Python</li>
+                <li>REST API</li>
+                <li>MySQL</li>
+              </ul>
+            </article>
+
+            <article class="card project-card">
+              <div class="project-card-header">
+                <span class="badge">Security Practice</span>
+                <p class="eyebrow status-pill">
+                  <span class="status-dot" aria-hidden="true"></span>Planned
+                  Project
+                </p>
+              </div>
+
+              <h2>Authentication Service</h2>
+
+              <p class="muted">
+                A planned service for studying registration, login, password
+                handling, authorization, and protected routes.
+              </p>
+
+              <div class="project-objectives">
+                <h3>Learning objectives</h3>
+
+                <ul>
+                  <li>Hash passwords before storage</li>
+                  <li>Separate authentication and authorization</li>
+                  <li>Return appropriate HTTP status codes</li>
+                </ul>
+
+                <ul class="technology-list" aria-label="Planned technologies">
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <div class="project-card-header">
+                <span class="badge">Data Practice</span>
+                <p class="eyebrow status-pill">
+                  <span class="status-dot" aria-hidden="true"></span>Planned
+                  Project
+                </p>
+              </div>
+
+              <h2>Expense Tracker API</h2>
+
+              <p class="muted">
+                A planned API for practising relational data modelling,
+                transaction records, filtering, and summary calculations.
+              </p>
+
+              <div class="project-objectives">
+                <h3>Learning objectives</h3>
+
+                <ul>
+                  <li>Model users, categories, and transactions</li>
+                  <li>Filter records with query parameters</li>
+                  <li>Preserve relational data integrity</li>
+                </ul>
+              </div>
+
+              <ul class="technology-list" aria-label="Planned technologies">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MySQL</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="section standards-secion"
+          aria-labelledby="standards-title"
+        >
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Working Standards</p>
+              <h2 id="standards-title">Development Standards</h2>
+
+              <p class="muted">
+                Principles that will guide how these learning projects are
+                designed, implemented, and reviewed.
+              </p>
+            </div>
+
+            <div class="standards-grid">
+              <!-- Four standard items -->
+              <article class="standard-item">
+                <span class="card-index" aria-hidden="true">01</span>
+                <h3>Defensive Validation</h3>
+                <p class="muted">
+                  Validate and sanitize input before using it in application
+                  logic.
+                </p>
+              </article>
+
+              <article class="standard-item">
+                <span class="card-index" aria-hidden="true">02</span>
+                <h3>Atmic Commits</h3>
+                <p class="muted">
+                  Keep commits small, focused, and clearly described.
+                </p>
+              </article>
+
+              <article class="standard-item">
+                <span class="card-index" aria-hidden="true">03</span>
+                <h3>Semantic HTTP</h3>
+                <p class="muted">
+                  Use methods and status codes that accurately describe
+                  outcomes.
+                </p>
+              </article>
+
+              <article class="standard-item">
+                <span class="card-index" aria-hidden="true">04</span>
+                <h3>Schema Integrity</h3>
+                <p class="muted">
+                  Use clear relationships and constraints to protect stored
+                  data.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="container footer-inner">

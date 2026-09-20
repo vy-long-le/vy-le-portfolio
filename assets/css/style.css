@@ -160,6 +160,23 @@ p {
   text-transform: uppercase;
 }
 
+.status-pill {
+  width: fit-content;
+  margin-bottom: var(--space-5);
+  padding: 6px 12px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+
+  background-color: var(--color-surface);
+
+  white-space: nowrap;
+}
+
 /* Create the shared container and section spacing */
 .container {
   width: min(calc(100% - (var(--gutter-desktop) * 2)), var(--container-width));
@@ -593,6 +610,20 @@ article {
     align-items: flex-start;
     gap: var(--space-5);
   }
+
+  .project-grid,
+  .standards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+
+  .standard-item {
+    border-left: 0;
+    border-top: 1px solid var(--color-border);
+  }
 }
 
 @media (max-width: 480px) {
@@ -797,20 +828,6 @@ article {
   color: var(--color-text-muted);
   font-size: 0.75rem;
   text-align: center;
-}
-
-.hero-status {
-  width: fit-content;
-  padding: 6px 10px;
-
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-
-  background-color: var(--color-surface);
 }
 
 .status-dot {
@@ -1084,4 +1101,127 @@ article {
 
 .study-callout .button {
   flex-shrink: 0;
+}
+
+/* Add the reusable page introduction styles */
+.page-hero {
+  padding-block: clamp(64px, 8vw, 96px);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-hero h1 {
+  max-width: 800px;
+}
+
+.page-introduction {
+  max-width: 720px;
+  margin-bottom: 0;
+
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+/* Style the project grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.project-card {
+  min-height: 430px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-header {
+  margin-bottom: var(--space-5);
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.project-status {
+  color: var(--color-accent);
+
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+}
+
+.project-objectives {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.project-objectives h3 {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+}
+
+.project-objectives ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+
+  color: var(--color-text-muted);
+}
+
+/* Style the technology labels */
+.technology-list {
+  margin: 0 0 auto;
+  padding: var(--space-5) 0 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+
+  list-style: none;
+}
+
+.technology-list li {
+  padding: 5px 9px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-mono);
+  font-size: 0, 75rem;
+}
+
+/* Style Development Standards */
+.standards-secion {
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.standards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.standard-item {
+  padding: var(--space-5);
+
+  border-left: 1px solid var(--color-border);
+}
+
+.standard-item h3 {
+  font-size: 1.125rem;
 }
