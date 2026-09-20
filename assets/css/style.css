@@ -624,6 +624,15 @@ article {
     border-left: 0;
     border-top: 1px solid var(--color-border);
   }
+
+  .skills-grid,
+  .learning-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    min-height: auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1224,4 +1233,136 @@ article {
 
 .standard-item h3 {
   font-size: 1.125rem;
+}
+
+/* Style the Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.skill-card {
+  min-height: 340px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card-header {
+  margin-bottom: var(--space-5);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.skill-marker {
+  min-width: 44px;
+  height: 44px;
+  padding-inline: 8px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+
+  font-family: var(--font-mono);
+  font-family: 0.75rem;
+  font-weight: 600;
+}
+
+.skill-card h2 {
+  margin-bottom: var(--space-2);
+  font-size: 1.5rem;
+}
+
+.skill-category {
+  margin-bottom: var(--space-4);
+
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.skill-objective {
+  margin-top: auto;
+  padding: var(--space-5);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.skill-objective strong {
+  display: block;
+  margin-bottom: var(--space-2);
+
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.skill-objective p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+/* Style the Learning Approach */
+.learning-section {
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.learning-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(420px, 1.2fr);
+  align-items: start;
+  gap: var(--space-8);
+}
+
+.learning-copy {
+  max-width: 520px;
+}
+
+.discipline-list {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  gap: var(--space-3);
+
+  list-style: none;
+}
+
+.discipline-list li {
+  padding: var(--space-4);
+
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: var(--space-4);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+
+  background-color: var(--color-canvas);
+}
+
+.discipline-list li > span {
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.discipline-list strong {
+  display: block;
+  margin-bottom: var(--sapce-1);
+}
+
+.discipline-list p {
+  margin: 0;
+  color: var(--color-text-muted);
 }
