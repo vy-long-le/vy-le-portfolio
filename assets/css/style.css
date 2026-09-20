@@ -351,6 +351,29 @@ article {
 }
 
 /* Style the skip link */
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: var(--space-4);
+  z-index: 1000;
+
+  padding: 10px 14px;
+
+  border-radius: var(--radius-small);
+
+  background-color: var(--color-button);
+  color: #ffffff;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  transform: translateY(-150%);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(16px);
+}
+
 .skip-link:focus {
   transform: translateY(0);
 }
