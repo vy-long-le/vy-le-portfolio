@@ -22,7 +22,7 @@ function openMenu() {
   menuButton.setAttribute("aria-expanded", "true");
   menuButton.setAttribute("aria-label", "Close navigation menu");
 
-  menuIcon.textContent = "close";
+  menuIcon.textContent = "x";
 }
 
 function closeMenu({ returnFocus = false } = {}) {
@@ -31,7 +31,7 @@ function closeMenu({ returnFocus = false } = {}) {
   menuButton.setAttribute("aria-expanded", "false");
   menuButton.setAttribute("aria-label", "Open navigation menu");
 
-  menuIcon.textContent = "menu";
+  menuIcon.textContent = "☰";
 
   if (returnFocus) {
     menuButton.focus();
@@ -45,7 +45,7 @@ function synchronizeMenu(event) {
     navigation.hidden = false;
     menuButton.setAttribute("aria-expanded", "false");
     menuButton.setAttribute("aria-label", "Open navigation menu");
-    menuIcon.textContent = "menu";
+    menuIcon.textContent = "☰";
   }
 }
 

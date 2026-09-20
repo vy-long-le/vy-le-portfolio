@@ -39,12 +39,7 @@
           aria-label="Open navigation menu"
           data-menu-toggle
         >
-          <span
-            class="material-symbols-outlined"
-            aria-hidden="true"
-            data-menu-icon
-            >Menu</span
-          >
+          <span class="menu-icon" aria-hidden="true" data-menu-icon>☰</span>
         </button>
 
         <nav
@@ -261,28 +256,45 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-identity">
-          <a href="index.html" class="footer-brand">Vy Le</a>
-          <p>Backend Developer Student</p>
+          <p class="footer-role">
+            <strong>Vy Le</strong>
+            <span class="footer-divider" aria-hidden="true">/</span>
+            <span>Backend Developer Student</span>
+          </p>
+
+          <p class="footer-note">
+            Built while learning HTML, CSS, and Javascript
+          </p>
         </div>
 
         <nav class="footer-links" aria-label="Contact links">
-          <a href="mailto:lelongvy13@gmail.com">Email</a>
+          <a href="mailto:lelongvy13@gmail.com">
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >mail</span
+            >
+            Email</a
+          >
           <a
             href="https://github.com/vy-long-le"
             target="_blank"
             rel="noopener noreferrer"
-            >GitHub</a
+          >
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >code</span
+            >
+            GitHub</a
           >
           <a
             href="https://www.linkedin.com/in/vy-le-long-b9a3243a7/"
             target="_blank"
             rel="noopener noreferrer"
-            >LinkedIn</a
+          >
+            <span class="material-symbols-outlined" aria-hidden="true"
+              >badge</span
+            >
+            LinkedIn</a
           >
         </nav>
-        <p class="footer-note">
-          Built while learning HTML, CSS, and Javascript
-        </p>
       </div>
     </footer>
   </body>

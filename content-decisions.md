@@ -168,4 +168,3 @@ This checklist records the decisions that must remain consistent throughout the 
 - [x] Unsupported claims and screenshot inconsistencies have explicit corrections.
 - [x] Image, language, form, and deployment limitations are documented.
 - [x] No unresolved content conflict remains before project setup begins.
-
